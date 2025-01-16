@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AQRAM Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">AQRAM Studio</span>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#companyProfile">Our Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#messageUs">Message Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2500">
+        <img
+          src="https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Vernazza, Italy</h5>
+          <p>Photo taken by <strong>Anders Jildén</strong></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ciucaș Peak, Romania</h5>
+          <p>Photo taken by <strong>Urban Vintage</strong></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img
+          src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Santa Monica, United States</h5>
+          <p>Photo taken by <strong>Ethan Robertson</strong></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img
+          src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?q=80&w=1721&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tony Grove Lake, United States</h5>
+          <p>Photo taken by <strong>Greg Rakozy</strong></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img
+          src="https://images.unsplash.com/photo-1496347646636-ea47f7d6b37b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Big Sur, United States</h5>
+          <p>Photo taken by <strong>Joshua Sortino</strong></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr />
+
+  <!-- Company Profile & Headquarters -->
+
+  <!-- Company Profile -->
+  <section id="companyProfile">
+    <div class="container my-5 text-center">
+      <h2 class="text-center mb-4">About AQRAM Studio</h2>
+      <p class="text-center">
+        AQRAM Studio is a leading photography studio in Indonesia, known for
+        its elegant and sophisticated approach to capturing moments. Our
+        expertise ranges from event photography to commercial shoots, with a
+        strong emphasis on creativity, precision, and customer satisfaction.
+        We are dedicated to delivering high-quality visual storytelling that
+        resonates with our clients.
+      </p>
+      <p class="text-center">
+        With a team of passionate photographers, designers, and creative
+        professionals, AQRAM Studio is committed to pushing the boundaries of
+        photography. Our unique perspective and innovative approach make us
+        stand out in the industry. We believe in creating timeless memories
+        that speak volumes through every image we capture.
+      </p>
+      <p class="text-center">
+        We operate across multiple locations in Indonesia, ensuring that our
+        clients have access to our services no matter where they are. From our
+        headquarters in Jakarta to branches in Bandung and Surabaya, we strive
+        to provide the best photography experiences with a personalized touch.
+      </p>
+    </div>
+
+    <!-- Headquarters Section -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Our Headquarters</h2>
+      <div class="card-container row justify-content-center">
+        <!-- Jakarta Card (Main Office) -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Balaikota_DKI_Jakarta.jpg/1200px-Balaikota_DKI_Jakarta.jpg"
+              class="card-img-top" alt="Jakarta Headquarters" />
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title">Jakarta (Main Office)</h5>
+              <p class="card-text flex-grow-1">Our flagship office located in Jakarta is the heart of AQRAM Studio. As
+                the primary
+                headquarters, we handle key operations, project management, and serve as the main hub for our creative
+                services and collaborations. Located at the vibrant center of Indonesia's capital, it is easily
+                accessible
+                for clients and partners.</p>
+              <button class="btn btn-primary mt-auto align-self-center" data-bs-toggle="modal"
+                data-bs-target="#jakartaModal">See Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bandung Card -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img src="https://fajarsatu.com/wp-content/uploads/2021/06/cover-balaikota-bandung-1280x854-1.jpg"
+              class="card-img-top" alt="Bandung Headquarters" />
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title">Bandung</h5>
+              <p class="card-text flex-grow-1">Bandung, known for its cool climate and vibrant culture, is home to our
+                creative
+                studio.
+                This location offers an ideal setting for innovation, with a growing creative industry. We focus on
+                offering
+                a relaxed atmosphere for brainstorming, design, and photography work. It’s a perfect blend of modernity
+                and
+                natural beauty, attracting both local and international talent.</p>
+              <button class="btn btn-primary mt-auto align-self-center" data-bs-toggle="modal"
+                data-bs-target="#bandungModal">See Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Surabaya Card -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="https://awsimages.detik.net.id/community/media/visual/2021/08/15/balai-kota-surabaya.jpeg?w=600&q=90"
+              class="card-img-top" alt="Surabaya Headquarters" />
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title">Surabaya</h5>
+              <p class="card-text flex-grow-1">Surabaya serves as our expansion office, playing a key role in extending
+                our network
+                across Indonesia. This location emphasizes growing our presence in the business and creative sectors.
+                With
+                the strategic positioning as a major port city, Surabaya provides access to a wide range of
+                opportunities,
+                including cross-industry collaborations and access to new markets.</p>
+              <button class="btn btn-primary mt-auto align-self-center" data-bs-toggle="modal"
+                data-bs-target="#surabayaModal">See Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jakarta Modal -->
+    <div class="modal fade" id="jakartaModal" tabindex="-1" aria-labelledby="jakartaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="jakartaModalLabel">Jakarta Headquarters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6><strong>Address:</strong></h6>
+            <p>Jl. Jend. Sudirman Kav. 45, Central Jakarta, 10210</p>
+
+            <h6><strong>Contact:</strong></h6>
+            <ul>
+              <li>Phone: +62 21 1234 5678</li>
+              <li>Email: jakarta@aqramstudio.com</li>
+            </ul>
+
+            <h6><strong>Business Hours:</strong></h6>
+            <p>Monday to Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 3:00 PM</p>
+
+            <h6><strong>Services:</strong></h6>
+            <ul>
+              <li>Corporate Photoshoots</li>
+              <li>Event Photography</li>
+              <li>Portraits</li>
+            </ul>
+
+            <h6><strong>Nearby Landmarks:</strong></h6>
+            <p>Located near Plaza Indonesia and Grand Indonesia Mall.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bandung Modal -->
+    <div class="modal fade" id="bandungModal" tabindex="-1" aria-labelledby="bandungModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bandungModalLabel">Bandung Studio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6><strong>Address:</strong></h6>
+            <p>Jl. Asia Afrika No. 25, Bandung, 40111</p>
+
+            <h6><strong>Contact:</strong></h6>
+            <ul>
+              <li>Phone: +62 22 9876 5432</li>
+              <li>Email: bandung@aqramstudio.com</li>
+            </ul>
+
+            <h6><strong>Business Hours:</strong></h6>
+            <p>Monday to Friday: 9:00 AM - 5:30 PM<br>Saturday: 10:00 AM - 3:00 PM</p>
+
+            <h6><strong>Specialties:</strong></h6>
+            <ul>
+              <li>Fashion Shoots</li>
+              <li>Product Photography</li>
+              <li>Creative Concepts</li>
+            </ul>
+
+            <h6><strong>Nearby Landmarks:</strong></h6>
+            <p>Near Gedung Sate and Braga Street.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Surabaya Modal -->
+    <div class="modal fade" id="surabayaModal" tabindex="-1" aria-labelledby="surabayaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="surabayaModalLabel">Surabaya Office</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6><strong>Address:</strong></h6>
+            <p>Jl. Basuki Rahmat No. 12, Surabaya, 60271</p>
+            <h6><strong>Contact:</strong></h6>
+            <ul>
+              <li>Phone: +62 31 6789 0123</li>
+              <li>Email: surabaya@aqramstudio.com</li>
+            </ul>
+            <h6><strong>Business Hours:</strong></h6>
+            <p>Monday to Friday: 8:30 AM - 5:30 PM<br>Saturday: 10:00 AM - 2:30 PM</p>
+            <h6><strong>Focus Areas:</strong></h6>
+            <ul>
+              <li>Business Photography</li>
+              <li>Lifestyle Shoots</li>
+              <li>Hospitality Sector Projects</li>
+            </ul>
+            <h6><strong>Nearby Landmarks:</strong></h6>
+            <p>Close to Tunjungan Plaza and Surabaya Zoo.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <!-- Message Us Section -->
+  <section id="messageUs">
+    <div class="container my-5" id="message-us">
+      <h2 class="text-center mb-4">Message Us</h2>
+
+      <div class="row">
+        <!-- Left Side - Message Form -->
+        <div class="col-md-6">
+          <form id="userForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required />
+            </div>
+            <div class="mb-3">
+              <label for="dob" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" id="dob" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Gender</label><br />
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="gender-male" name="gender" value="male" required />
+                <label class="form-check-label" for="gender-male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="gender-female" name="gender" value="female" required />
+                <label class="form-check-label" for="gender-female">Female</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="comments" class="form-label">Your Message</label>
+              <textarea class="form-control" id="comments" rows="4" placeholder="Write your message"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Side - Message History -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-4">Message History</h3>
+          <div id="messageHistory" class="border p-3 rounded"></div>
+          <button id="clearHistory" class="btn btn-danger mt-3 w-100">
+            Clear History
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 AQRAM Studio. All Rights Reserved.</p>
+      <p class="mb-0">Follow us on:
+        <a href="https://www.facebook.com" class="text-light"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com" class="text-light"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com" class="text-light"><i class="fa-brands fa-instagram"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Fontawesome JS -->
+  <script src="https://kit.fontawesome.com/d554eb4963.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
